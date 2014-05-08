@@ -1,8 +1,36 @@
+import SonatypeKeys._
+
+sonatypeSettings
+
 name := "mongofaker"
 
 organization := "net.reactivecore"
 
+profileName := "net.reactivecore"
+
 version := "0.2"
+
+// To sync with Maven central, you need to supply the following information:
+pomExtra := {
+  <url>https://github.com/reactivecore/mongofaker</url>
+    <licenses>
+      <license>
+        <name>MIT License</name>
+        <url>http://opensource.org/licenses/MIT</url>
+      </license>
+    </licenses>
+    <scm>
+      <connection>scm:git:@github.com:reactivecore/mongofaker.git</connection>
+      <url>git@github.com:reactivecore/mongofaker.git</url>
+    </scm>
+    <developers>
+      <developer>
+        <id>nob13</id>
+        <name>Norbert Schultz</name>
+        <url>https://www.reactivecore.de</url>
+      </developer>
+    </developers>
+}
 
 scalaVersion := "2.10.3"
 

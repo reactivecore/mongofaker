@@ -10,15 +10,12 @@ Starting one MongoDB fake server takes around 250ms, much faster than any other 
 Usage
 =====
 
-Build it with sbt and deploy it to your local maven repository:
+MongoFaker is published at Maven Central, for Scala 2.10.
 
-    sbt publishM2
-   
 Add these lines to your Applications' build.sbt
 
     libraryDependencies += "net.reactivecore" %% "mongofaker" % "0.2"
-   
-   
+
 Inside your Testcode you can spin up a MongoDB Server:
 
     import net.reactivecore.mongofaker.{MongoConfiguration, MongoInstance}

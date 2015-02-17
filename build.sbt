@@ -8,7 +8,7 @@ organization := "net.reactivecore"
 
 profileName := "net.reactivecore"
 
-version := "0.2"
+version := "0.2.1"
 
 // To sync with Maven central, you need to supply the following information:
 pomExtra := {
@@ -33,6 +33,8 @@ pomExtra := {
 }
 
 scalaVersion := "2.10.3"
+
+crossScalaVersions := Seq("2.10.3", "2.11.5")
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
